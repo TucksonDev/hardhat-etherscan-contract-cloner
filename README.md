@@ -94,6 +94,10 @@ The plugin uses Etherscan [_getsourcecode_](https://docs.etherscan.io/api-endpoi
 
 Other networks will be added in the future
 
+
 ## Final note
-This is the first npm package and plugin I create. Please, do not hesitate in reaching out with any kind of feedback to improve this plugin and make it as useful as possible.
+The development of this plugin has been inspired by the plugin [hardhat-etherscan](https://raw.githubusercontent.com/NomicFoundation/hardhat/master/packages/hardhat-etherscan), and some parts of the code regarding the connection to etherscan have been influenced by its code. Big thanks to the developers.
+
+Also, this is the first npm package and plugin I create. Please, do not hesitate in reaching out with any kind of feedback to improve this plugin and make it as useful as possible.
+
 Thanks !
