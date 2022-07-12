@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-contract-cloner",
+  "version": "1.0.0",
+  "description": "Hardhat plugin for cloning contracts from etherscan",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "hardhat": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2"
+  }
+}
