@@ -216,7 +216,7 @@ export const cloneSubtask: ActionType<CloneSubtaskArgs> = async (
             }
 
             const importedContracts =
-                sourceItem.fileContents.content.match(/import ".*"/gi);
+                sourceItem.fileContents.content.match(/import ["'].*["']/gi);
             if (!importedContracts) {
                 return;
             }
@@ -225,6 +225,8 @@ export const cloneSubtask: ActionType<CloneSubtaskArgs> = async (
                 const contractPath = importedContract
                     .replace('import "', "")
                     .replace('"', "")
+                    .replace("import '", "")
+                    .replace("'", "")
                     .trim();
                 if (
                     !Object.keys(importedContractsInformation).includes(
@@ -277,7 +279,7 @@ export const cloneSubtask: ActionType<CloneSubtaskArgs> = async (
                         // a regex of the path we're looking for including any "../".
                         // This is to prevent cases where the same contract is imported
                         // from different sources using different relative paths.
-                        const substitutionRegex = new RegExp("import \"(\\.\\.\\/)*" + skey + "\"", "gi");
+                        const substitutionRegex = new RegExp("import [\"\'](\\.\\.\\/)*" + skey + "[\"\']", "gi");
 
                         contractSourceCode = contractSourceCode.replace(
                             substitutionRegex,
