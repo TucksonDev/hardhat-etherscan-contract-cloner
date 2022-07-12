@@ -50,7 +50,7 @@ module.exports = {
   }
 };
 ```
-This is the same configuration used in [Hardhat etherscan verification plugin](https://raw.githubusercontent.com/NomicFoundation/hardhat/master/packages/hardhat-etherscan), so it does not conflict with it.
+This is the same configuration used in [Hardhat etherscan verification plugin](https://github.com/NomicFoundation/hardhat/tree/master/packages/hardhat-etherscan), so it does not conflict with it.
 
 ### Multiple API keys
 
@@ -96,7 +96,7 @@ Other networks will be added in the future
 
 
 ## Final note
-The development of this plugin has been inspired by the plugin [hardhat-etherscan](https://raw.githubusercontent.com/NomicFoundation/hardhat/master/packages/hardhat-etherscan), and some parts of the code regarding the connection to etherscan have been influenced by its code. Big thanks to the developers.
+The development of this plugin has been inspired by the plugin [hardhat-etherscan](https://github.com/NomicFoundation/hardhat/tree/master/packages/hardhat-etherscan), and some parts of the code regarding the connection to etherscan have been influenced by its code. Big thanks to the developers.
 
 Also, this is the first npm package and plugin I create. Please, do not hesitate in reaching out with any kind of feedback to improve this plugin and make it as useful as possible.
 
