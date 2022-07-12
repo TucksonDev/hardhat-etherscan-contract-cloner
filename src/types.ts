@@ -17,7 +17,7 @@ export type ChainConfig = Record<string, EtherscanChainConfig>;
 export interface EtherscanNetworkEntry {
     network: string;
     urls: EtherscanURLs;
-  }
+}
 
 // Interfaces for extended Hardhat configuration
 // We only need an API Key
@@ -37,12 +37,14 @@ export type ApiResponse = {
 };
 
 // Sources handling
+export type sourceCodeItemContents = {
+    content: string;
+};
+
 export type sourceCodeItem = {
     filePath: string;
-    fileContents: {
-        content: string;
-    }
-}
+    fileContents: sourceCodeItemContents;
+};
 export interface AssociativeArray {
     [key: string]: string;
 }

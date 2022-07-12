@@ -1,5 +1,6 @@
 import { subtask, task, types } from "hardhat/config";
-import { clone, cloneSubtask } from "./task"
+
+import { clone, cloneSubtask } from "./task";
 
 ///////////
 // Tasks //
@@ -7,7 +8,7 @@ import { clone, cloneSubtask } from "./task"
 task("clone", "Clones a smartcontract from the blockchain")
     .addOptionalPositionalParam(
         "address",
-        "Address of the smart contract to clone"
+        "Address of the smart contract to clone",
     )
     .addFlag("listNetworks", "Print the list of supported networks")
     .setAction(clone);

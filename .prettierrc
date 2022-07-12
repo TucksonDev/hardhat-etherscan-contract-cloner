@@ -1,0 +1,5 @@
+{
+    "trailingComma": "all",
+    "semicolon": "always",
+    "tabWidth": 4
+}

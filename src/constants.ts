@@ -1,10 +1,10 @@
 import { ChainConfig } from "./types";
 
 // Plugin name
-export const PLUGIN_NAME = 'hardhat-contract-cloner';
+export const PLUGIN_NAME = "hardhat-contract-cloner";
 
 // Subdirectory to save imported contracts when necessary
-export const ImportedContractsPath = 'etherscan-imported';
+export const ImportedContractsPath = "etherscan-imported";
 
 // New chains can be added here
 // See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids

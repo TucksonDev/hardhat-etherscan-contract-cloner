@@ -1,19 +1,45 @@
 {
-  "name": "hardhat-contract-cloner",
-  "version": "1.0.0",
-  "description": "Hardhat plugin for cloning contracts from etherscan",
-  "main": "dist/src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --build ."
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "peerDependencies": {
-    "hardhat": "^2.0.0"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^1.0.2"
-  }
+    "name": "hardhat-contract-cloner",
+    "version": "1.0.0",
+    "description": "Hardhat plugin for cloning contracts from etherscan",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TucksonDev/hardhat-contract-cloner"
+    },
+    "homepage": "https://github.com/TucksonDev/hardhat-contract-cloner#readme",
+    "author": "Tuckson",
+    "license": "MIT",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "keywords": [
+        "ethereum",
+        "smart-contracts",
+        "hardhat",
+        "hardhat-plugin",
+        "etherscan",
+        "clone"
+    ],
+    "scripts": {
+        "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
+        "lint": "tslint --config tslint.json --project tsconfig.json",
+        "test": "mocha --exit --recursive 'test/**/*.test.ts'",
+        "build": "tsc --build",
+        "watch": "tsc -w",
+        "prepublishOnly": "npm run build"
+    },
+    "files": [
+        "dist/src/",
+        "src/",
+        "LICENSE",
+        "README.md"
+    ],
+    "peerDependencies": {
+        "hardhat": "^2.0.0"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-plugin-prettier": "^2.3.0"
+    }
 }
