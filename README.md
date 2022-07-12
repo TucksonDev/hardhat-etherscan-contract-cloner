@@ -11,7 +11,7 @@ The main contract will be copied in your `contracts` folder. Any imported contra
 ## Installation
 
 ```bash
-npm install --save-dev TucksonDev/hardhat-contract-cloner
+npm install --save-dev hardhat-contract-cloner
 ```
 
 Import the plugin in your `hardhat.config.js`:
@@ -89,6 +89,7 @@ The plugin uses Etherscan [_getsourcecode_](https://docs.etherscan.io/api-endpoi
 ## Supported networks
 - mainnet
 - rinkeby
+- goerli
 - kovan
 - ropsten
 
