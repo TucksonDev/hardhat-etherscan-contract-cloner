@@ -1,12 +1,12 @@
 {
-    "name": "hardhat-contract-cloner",
-    "version": "1.0.3",
+    "name": "hardhat-etherscan-contract-cloner",
+    "version": "1.0.5",
     "description": "Hardhat plugin for cloning contracts from ethereum using etherscan",
     "repository": {
         "type": "git",
-        "url": "https://github.com/TucksonDev/hardhat-contract-cloner"
+        "url": "https://github.com/TucksonDev/hardhat-etherscan-contract-cloner"
     },
-    "homepage": "https://github.com/TucksonDev/hardhat-contract-cloner#readme",
+    "homepage": "https://github.com/TucksonDev/hardhat-etherscan-contract-cloner#readme",
     "author": "Tuckson",
     "license": "MIT",
     "main": "dist/index.js",

@@ -1,4 +1,4 @@
-# hardhat-contract-cloner
+# hardhat-etherscan-contract-cloner
 
 [Hardhat](https://hardhat.org) plugin for cloning verified contracts from any supported network using [Etherscan](https://etherscan.io/)'s API.
 
@@ -11,19 +11,19 @@ The main contract will be copied in your `contracts` folder. Any imported contra
 ## Installation
 
 ```bash
-npm install --save-dev hardhat-contract-cloner
+npm install --save-dev hardhat-etherscan-contract-cloner
 ```
 
 Import the plugin in your `hardhat.config.js`:
 
 ```js
-require("hardhat-contract-cloner");
+require("hardhat-etherscan-contract-cloner");
 ```
 
 Or if you are using TypeScript, in your `hardhat.config.ts`:
 
 ```ts
-import "hardhat-contract-cloner";
+import "hardhat-etherscan-contract-cloner";
 ```
 
 ## Tasks

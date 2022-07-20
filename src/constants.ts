@@ -1,7 +1,7 @@
 import { ChainConfig } from "./types";
 
 // Plugin name
-export const PLUGIN_NAME = "hardhat-contract-cloner";
+export const PLUGIN_NAME = "hardhat-etherscan-contract-cloner";
 
 // Subdirectory to save imported contracts when necessary
 export const ImportedContractsPath = "etherscan-imported";
