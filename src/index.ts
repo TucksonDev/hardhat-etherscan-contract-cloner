@@ -1,6 +1,7 @@
 import { subtask, task, types } from "hardhat/config";
 
 import { clone, cloneSubtask } from "./task";
+import "./type-extensions";
 
 ///////////
 // Tasks //

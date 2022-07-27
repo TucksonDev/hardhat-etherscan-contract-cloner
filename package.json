@@ -1,6 +1,6 @@
 {
     "name": "hardhat-etherscan-contract-cloner",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Hardhat plugin for cloning contracts from ethereum using etherscan",
     "repository": {
         "type": "git",

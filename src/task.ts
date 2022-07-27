@@ -279,11 +279,16 @@ export const cloneSubtask: ActionType<CloneSubtaskArgs> = async (
                         // a regex of the path we're looking for including any "../".
                         // This is to prevent cases where the same contract is imported
                         // from different sources using different relative paths.
-                        const substitutionRegex = new RegExp("import [\"\'](\\.\\.\\/)*" + skey + "[\"\']", "gi");
+                        const substitutionRegex = new RegExp(
+                            // tslint:disable-next-line
+                            "import [\"\'](\\.\\.\\/)*" + skey + "[\"\']",
+                            "gi",
+                        );
 
                         contractSourceCode = contractSourceCode.replace(
                             substitutionRegex,
-                            "import \"./" + svalue + "\""
+                            // tslint:disable-next-line
+                            "import \"./" + svalue + "\"",
                         );
                     }
                 },
